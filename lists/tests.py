@@ -4,7 +4,11 @@ from django.http import HttpRequest
 
 from lists.views import home_page
 
+from django.test import TestCase
 
+class SmokeTest(TestCase):
+
+    def test_bad_maths(self):
 class HomePageTest(TestCase):
 
     def test_root_url_resolves_to_home_page_view(self):
