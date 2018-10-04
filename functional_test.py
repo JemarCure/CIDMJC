@@ -8,9 +8,9 @@ browser = webdriver.Firefox()
 browser.get('http://localhost:8000')
 
 assert 'Django' in browser.title
-
+                    
 class NewVisitorTest(unittest.TestCase):
-  
+        table = self.browser.find_element_by_id('id_list_table')
      def setUp(self):
         self.browser = webdriver.Firefox()
   
