@@ -1,10 +1,9 @@
 from django.db import models
 
+class List(models.Model):
+    pass
+
+
 class Item(models.Model):
     text = models.TextField(default='')
-
-    class Item(models.Model):
-        text = models.TextField()
-
-    class Item(models.Model):
-        pass    
+    list = models.ForeignKey(List, default=None)
